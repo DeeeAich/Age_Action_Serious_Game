@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - CameraManager
+  - Puzzle
   layers:
   - Default
   - TransparentFX

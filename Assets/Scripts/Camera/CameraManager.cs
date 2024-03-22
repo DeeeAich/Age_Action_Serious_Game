@@ -60,7 +60,7 @@ public class CameraManager : MonoBehaviour
         {
             SwitchCamera(puzzleCamera);
         }
-        if(Input.GetKeyDown(KeyCode.S))
+        if(Input.GetKeyDown(KeyCode.Escape))
         {
             SwitchCamera(playerCamera);
         }
@@ -74,6 +74,7 @@ public class CameraManager : MonoBehaviour
                 if(hit.collider.tag == "Puzzle")
                 {
                     puzzleCamera = hit.transform.GetChild(0).GetComponent<CinemachineFreeLook>();
+                    SwitchCamera(puzzleCamera);
                 }
                 
             }
