@@ -18,7 +18,7 @@ public class WallTransparency : MonoBehaviour
     {
         currentHits = new RaycastHit[0];
         rayDirection = player.position - Camera.main.transform.position;
-        rayDistance = Vector3.Distance(player.position, Camera.main.transform.forward);
+        rayDistance = Vector3.Distance(player.position, Camera.main.transform.forward) - amountRadius * 2;
     }
 
     private void Update()
@@ -31,7 +31,7 @@ public class WallTransparency : MonoBehaviour
                     temp.ChangeMat(false);
             }
 
-        currentHits = Physics.SphereCastAll(Camera.main.transform.position, amountRadius, rayDirection);
+        currentHits = Physics.SphereCastAll(Camera.main.transform.position, amountRadius, rayDirection, rayDistance);
 
         if(currentHits.Length > 0)
             foreach(RaycastHit hit in currentHits)

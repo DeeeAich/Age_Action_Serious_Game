@@ -6,6 +6,7 @@ TagManager:
   tags:
   - CameraManager
   - Puzzle
+  - Stairs
   layers:
   - Default
   - TransparentFX
