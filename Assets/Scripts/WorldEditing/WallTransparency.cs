@@ -14,6 +14,9 @@ public class WallTransparency : MonoBehaviour
     float rayDistance;
     [SerializeField] float amountRadius = 0.5f;
 
+    [Header("Nav Information")]
+    public List<Transform> locations;
+
     private void Start()
     {
         currentHits = new RaycastHit[0];
@@ -36,7 +39,7 @@ public class WallTransparency : MonoBehaviour
         if(currentHits.Length > 0)
             foreach(RaycastHit hit in currentHits)
             {
-                print(hit.transform.name);
+                //print(hit.transform.name);
                 if (hit.transform.TryGetComponent<ObjectTransparent>(out ObjectTransparent temp))
                     temp.ChangeMat(true);
             }

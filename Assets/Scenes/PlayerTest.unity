@@ -359,6 +359,28 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   camera: {fileID: 1565546129}
+  downStairs: 1
+  wallController: {fileID: 0}
+--- !u!1 &1492799400 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1520239087107890176, guid: 0d01285bf7ee146218bee5ee434774d8,
+    type: 3}
+  m_PrefabInstance: {fileID: 1680963832797884598}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1492799404
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1492799400}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -4588375088717803121, guid: cff9129f92647be47b1c25c1452eaab9, type: 3}
 --- !u!1 &1565546128
 GameObject:
   m_ObjectHideFlags: 0
@@ -688,6 +710,14 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 928596708}
+    - target: {fileID: 582360821, guid: 0d01285bf7ee146218bee5ee434774d8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 29.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 582360821, guid: 0d01285bf7ee146218bee5ee434774d8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.11
+      objectReference: {fileID: 0}
     - target: {fileID: 1214075027303006998, guid: 0d01285bf7ee146218bee5ee434774d8,
         type: 3}
       propertyPath: m_RootOrder
@@ -743,10 +773,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1680963832429952174, guid: 0d01285bf7ee146218bee5ee434774d8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1986811337772226988, guid: 0d01285bf7ee146218bee5ee434774d8,
         type: 3}
       propertyPath: m_Name
       value: NewHouse
+      objectReference: {fileID: 0}
+    - target: {fileID: 3760425448232242226, guid: 0d01285bf7ee146218bee5ee434774d8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d01285bf7ee146218bee5ee434774d8, type: 3}
